@@ -26,7 +26,7 @@ class TestSimpleFunctions(object):
         answer = factorial(number)
         assert answer == expected
 
-    @pytest.mark.parametrize('number', 2, 3, 4)
     def test_sin(self, number):
         '''Test computation of sin'''
-        assert np.isclose(my_sin(number), np.sin(number))
+        assert np.isclose(my_sin(2), np.sin(2))
+        assert np.isclose(my_sin(3), np.sin(3))
