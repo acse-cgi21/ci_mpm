@@ -26,7 +26,7 @@ class TestSimpleFunctions(object):
         answer = factorial(number)
         assert answer == expected
 
-    def test_sin(self, number):
+    def test_sin(self):
         '''Test computation of sin'''
         assert np.isclose(my_sin(2), np.sin(2))
         assert np.isclose(my_sin(3), np.sin(3))
